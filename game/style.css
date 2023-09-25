@@ -1,0 +1,43 @@
+body {
+    background: #fffaff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+    height: 768px;
+    width: 1024px;
+    overflow: hidden;
+
+    margin: auto;
+}
+
+.poly {
+    height: 32px;
+    width: 32px;
+    background: #000;
+    position: absolute;
+    --x: 0px;
+    --y: 0px;
+    transform: translate(var(--x), var(--y));
+    z-index: 1;
+}
+
+.player {
+    position: absolute;
+    background: #ff0000;
+    z-index: 1000;
+}
+
+.map {
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    --x: 0px;
+    --y: 0px;
+    transform: translate(var(--x), var(--y));
+    z-index: 0;
+}
